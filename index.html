@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<title> Welcome to my App</title>
+<head>
+    <link href="../static/main.css" rel="stylesheet">
+</head>
+    <body>
+        <div class= "container">
+            <h1>My App</h1>
+            <h3>Subscribe</h3>
+            <form action= {{url_for('success')}} method="POST">
+                <input title="Your info safe with us" placeholder="Enter your full name" type="name" name="user_name" required> <br>
+                <input title="Your info safe with us" placeholder="Enter your email address" type="email" name="email_name" required> <br>
+                <input title="Your info safe with us" placeholder="Enter you age" type="number" min="15", max="100" name="age" required> <br>
+                <button type="submit">submit</butten>
+            </form>
+        </div>
+    </body>
+</html>
